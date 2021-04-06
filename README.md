@@ -17,6 +17,9 @@ Following plugins are required:
 Following plugins are recommended:
 * AsyncWorldEdit https://www.spigotmc.org/resources/asyncworldedit.327/
 
+### Other stuff
+* MySQL Database
+
 ## Setup
 Build your TDA2Plugins.jar (For Intellij read this: https://www.jetbrains.com/help/idea/working-with-artifacts.html) and put it into the plugins folder of your server. Restart the server (never reload since that will break it). 
 It is recommended to set the --world-container tag like so: `java -Xmx1G -jar paper-XXX.jar --world-container worlds`. This will put all your worlds into one subfolder of your servers main folder.
