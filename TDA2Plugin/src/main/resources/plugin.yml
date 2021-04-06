@@ -1,0 +1,189 @@
+ main: de.peacepunkt.tda2plugin.Main
+ name: TDA2Plugins
+ version: 1.0
+ author: Rossi
+ description: thedarkage 3
+ api-version: 1.16
+ commands:
+    bubi:
+        description: check how often you killed player Bubi_is_mir_bums
+        usage: /bubi or /bubi top for top 13 killers
+    mapvote:
+        description: after a round, you can vote for the next map
+    maps:
+        description: shows all maps
+    sw:
+        description: try to switch team if not too unbalanced
+    mystats:
+        description: look at your stats
+        usage: /mystats
+    toplist:
+        description: look at toplist
+        usage: /toplist or /toplist page or /toplist username
+    mvp:
+        description: current most valuable player
+        usage: /mvp
+    suicide:
+        description: in case you got stuck
+        usage: /suicide
+    setFlag:
+        description: sets a flag at current location
+        permission: op
+        permission-message: Nope..
+    setCata:
+        description: sets a catapult at current location
+        permission: op
+        permission-message: Nope..
+    warp: 
+        description: warp to another world (must be loaded though)
+        usage: /warp <worldname>
+        permission: op
+        permission-message: Nope..
+    makeNewArena: 
+        description: create a new empty arena world and empty worlds fot team spawns
+        usage: /makeNewArena <worldname> <number of teams>
+        permission: op
+        permission-message: Nope..
+    makeArenaFrom:
+        description: makes arena from existing map and creates empty worlds for team spawns
+        usage: /makeArenaFrom <worldname> <number of teams>
+        permission: op
+        permission-message: Nope..
+    skip:
+        description: skip current round
+        permission: op
+        permission-message: Nope..
+    setTeamOfFlag:
+        permission: op
+    setCustomFlagBlock:
+        permission: op
+        permission-message: Nope..
+        usage: /setCustomFlagBlock <flag id> <status> at which block changes to second material (0 - 9)
+    edit:
+    setOwner:
+        permission: op
+        permission-message: Nope..
+    removeCata:
+        permission: op
+        permission-message: Nope..
+    removeFlag:
+        permission: op
+        permission-message: Nope..
+    showSpawnOfFlag:
+        description: show spawn location of flag
+        usage: /showSpawnOfFlag <ID> <optinal radius (in blocks) default = 8> <optinal height (in blocks) default = 9>
+        permission: builder
+        permission-message: Nope..
+    setCappingZoneOfFlag:
+        description: set capping zone of flag
+        usage: /setCappingZoneOfFlag <ID>
+        permission: op
+        permission-message: Nope..
+    showCappingZoneOfFlag:
+        description: shows capping zone of flag
+        usage: /showCappingZoneOfFlag <ID>
+        permission: builder
+        permission-message: Nope..
+    getFlags:
+        description: prints all flag names, their id and the closest one to the player
+        usage: /getFlags
+        permission: builder
+        permission-message: Nope..
+    setSpawnOfFlag:
+        description: sets spawn of flag with certain ID to players position
+        usage: /setSpawnOfFlag <ID>
+        permission: op
+        permission-message: Nope..
+    howmany:
+        permission: op
+        permission-message: Nope..
+    worlds:
+        permission: op
+        permission-message: Nope..
+    setGate:
+        usage: /setgate width height hideCompletely isDrawbridge material
+        permission: op
+        permission-message: Nope..
+    removeGate:
+        permission: op
+        permission-message: Nope..
+    setCannon:
+        usage: /setgate width height hideCompletely isDrawbridge material
+        permission: op
+        permission-message: Nope..
+    removeCannon:
+        permission: op
+        permission-message: Nope..
+    setSpawnBlock:
+        description: can only be used in Spawn worlds.
+        usage: /setSpawnBlock flagID
+        permission: op
+        permission-message: Nope..
+    removeNameTags:
+        description: To remove nametags of Spawnblocks. You have to be in a Spawn World for this.
+        permission: op
+        permission-message: Nope..
+    getArenas:
+        permission: op
+        permission-message: Nope..
+    setToplistDisplay:
+         permission: op
+         permission-message: Nope..
+    removeTopThing:
+         permission: op
+         permission-message: Nope..
+    recruited:
+        usage: /recruited <target name>
+        description: To claim perks for recruiting someone else
+    denyrecruitment:
+        usage: /denyrecruitment
+        description: To deny a recruitment request
+    acceptrecruitment:
+        usage: /acceptrecruitment
+        description: To accept a recruitment request
+    recruitmentstats:
+        usage: /recruitmentstats
+        description: To show owns recruitment level
+    whois:
+        usage: /whois <username>
+        description: shows all previous names of that player
+    pm:
+    teamchat:
+    globalchat:
+    vote:
+    xp:
+    buy:
+    bomb:
+        permission: op
+    dragon:
+        permission: op
+    swarm:
+        permission: op
+    kit:
+        permission: op
+    addxp:
+        permission: op
+    entertest:
+        usage: /entertest
+        description: to enter the test arena (works from spawns only)
+    leavetest:
+        usage: /leavetest
+        description: to leave the test arena and return to spawn
+    addMiniPvpArenaSpawn:
+        permission: op
+    showMiniPvpArenaSpawns:
+        permission: op
+    tell:
+        permission: op
+        permission-message: Use /pm
+    msg:
+        permission: op
+        permission-message: Use /pm
+
+ permissions:
+     builder:
+        default: false
+        children:
+            worldedit.*: true
+            minecraft.debugstick: true
+
