@@ -45,7 +45,7 @@ cataStrength: 2.5
 * **numOfAssists**: maximum number of players getting an assist of a killed player 
 * **cataStrength**: default value, can be set for individual maps too.
 
-Create a new map by typing `/makenewarena world_name <number of teams>`. There should be 1 + `<number of teams>` new worlds popping up now. One world with the name world_name (the arena) and `<number of teams>` many worlds with the name world_nameSpawnX. Those are the spawn rooms for your new arena. Never ever rename them. You can do /edit enter world_name then to go there. In the TDA2Plugins folder at your plugins there is now a WorldInfos folder that contains a folder for the created arena. Do not edit anything inside the `new` folder unless you know what you're doing. You can edit the settings for the arena though. This is the sample settings file for the Conwy arena:
+Create a new map by typing `/makenewarena world_name <number of teams>`. There should be 1 + `<number of teams>` new worlds popping up now. One world with the name world_name (the arena) and `<number of teams>` many worlds with the name world_nameSpawnX. Those are the spawn rooms for your new arena. Never ever rename them. You can do `/edit enter world_name` (or world_nameSpawnX) then to go there. In the TDA2Plugins folder at your plugins there is now a WorldInfos folder that contains a folder for the created arena. Do not edit anything inside the `new` folder unless you know what you're doing. You can edit the settings for the arena though. This is the sample settings file for the Conwy arena:
 ```
 timeOfDay: '1000'
 storm: 'false'
@@ -55,7 +55,7 @@ displayName: Conwy Castle
 staged: true
 cataStrength: 3.3
 ```
-You need at least one staged map with at least one flag per team on it. You can add flags and other structures with ingame commands. Look at the plugin.yml for more infos.
+You need at least one staged map with at least one flag per team on it to have a running game loop. You can add flags and other structures with ingame commands when you entered a world with `/edit enter world_name`. Look at the plugin.yml for more infos about commands.
 
 ## More stuff
 Here is a link to some finished maps (including the settings files for those maps):  https://www.mediafire.com/folder/db3ztajpxn6lg/thedarkage3
