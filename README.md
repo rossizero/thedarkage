@@ -56,3 +56,7 @@ staged: true
 cataStrength: 3.3
 ```
 You need at least one staged map with at least one flag per team on it. You can add flags and other structures with ingame commands. Look at the plugin.yml for more infos.
+
+## More stuff
+Here is a link to some finished maps (including the settings files for those maps):  https://www.mediafire.com/folder/db3ztajpxn6lg/thedarkage3
+Just make a new arena (for example `/makenewarena conwy 2`) with **exactly** the same name as the world folder of the map you want to import and replace the folders with the downloaded ones. Then place the data files into the WorldInfos folder of the TDA2Plugins folder and restart the server.
